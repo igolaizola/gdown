@@ -18,6 +18,10 @@ Even this README was written by **chatgpt o3-mini-high**.
 
 ## 📦 Installation
 
+### Download binary
+
+Download the latest release binary from the [Releases](https://github.com/igolaizola/gdown/releases).
+
 ### Using `go install`
 
 Ensure you have [Go](https://golang.org/dl/) installed. Then install the package with:
@@ -31,9 +35,9 @@ go install github.com/igolaizola/gdown/cmd/gdown@latest
 Clone the repository and build the CLI tool:
 
 ```bash
-git clone https://github.com/yourusername/gdown.git
+git clone https://github.com/igolaizola/gdown.git
 cd gdown
-go build -o gdown
+go build -o gdown cmd/gdown/main.go
 ```
 
 ## 📋 Usage
