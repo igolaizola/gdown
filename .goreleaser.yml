@@ -1,0 +1,14 @@
+builds:
+  - id: gdown
+    binary: gdown
+    main: ./cmd/gdown
+    goarch:
+      - amd64
+      - arm64
+      - arm
+archives:
+  - id: gdown
+    builds:
+      - gdown
+    format: zip
+    name_template: 'gdown_{{ .Version }}_{{- if eq .Os "darwin" }}macos{{- else }}{{ .Os }}{{ end }}_{{ .Arch }}'
