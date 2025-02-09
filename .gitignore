@@ -21,3 +21,4 @@ bin
 *.conf
 *.yaml
 README.pdf
+logs/
